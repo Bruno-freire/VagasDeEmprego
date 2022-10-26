@@ -120,10 +120,6 @@ do {
       lista = listarCandidatos(lista)
       indiceDaVaga = parseInt(prompt("Qual o indice da vaga que deseja apagar?\n"+lista))
       indiceDaVaga--
-      if(indiceDaVaga == -1 || indiceDaVaga !== vagasDeEmprego.length){
-        alert("Indice não encontrado!")
-        break
-      }
       textoCandidatos = ""
         for( i=0; i<vagasDeEmprego[indiceDaVaga].candidatosDaVaga.length;i++){
           textoCandidatos += "- "+vagasDeEmprego[indiceDaVaga].candidatosDaVaga[i].nome+"\n"
