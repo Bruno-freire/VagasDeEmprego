@@ -106,10 +106,6 @@ do {
           "\nCandidatos da vaga \n"+textoCandidatos+"\nQual o indice do candidato que deseja excluir?"
         ))
         indiceDoCandidato--
-        if(indiceDoCandidato !== vagasDeEmprego[indiceDaVaga].candidatosDaVaga.length){
-          alert("Indice não encontrado!")
-          break
-        }
         confirmação = confirm("Deseja realmente excluir o candidato(a) "+vagasDeEmprego[indiceDaVaga].candidatosDaVaga[indiceDoCandidato].nome+" da vaga de "+vagasDeEmprego[indiceDaVaga].nome+"?")
         if(confirmação){
         vagasDeEmprego[indiceDaVaga].candidatosDaVaga.splice(indiceDoCandidato,1)
